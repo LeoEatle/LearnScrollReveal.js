@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="author" content="LeoEatle" />
+		<title>WebWeixin</title>
+		<link rel="stylesheet" href="css/main.css" /> 
+		<link rel="stylesheet" href="jquery-ui-1.11.4.custom" />
+		<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+        <script type= "text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+
+
+	</head>
+	<body>
+		<div id="content">
+			<div id="left_panel">
+				<div id="user">
+					<div class="user_avator">
+						<img src="img/webwxgeticon.jpg"/>
+					</div>
+					<h3 class="user_name">
+						LeoEatle
+					</h3>
+				</div>
+				<div id="search_bar">
+					<!--这里时搜索框-->
+					<form action="" method="get" >
+							<input type="text" name="search" placeholder="搜索"/>
+					</form>
+				</div>
+				<div id="select">
+					<!--这里分别是最近联系人列表和按字母表排序的联系人列表-->
+					<span>最近联系人</span>
+					<span>全部联系人</span>
+				</div>
+				<div id="contact">
+					<div class="contact_user" >
+						<div class="user_avator">
+							<img src="img/webwxgeticon.jpg"/>
+						</div>
+						<h3 class="user_name">
+							LeoEatle
+						</h3>
+						
+					</div>
+					<div class="contact_user">
+							<div class="user_avator">
+								<img src="img/webwxgeticon (1).jpg"/>
+							</div>
+							<h3 class="user_name">
+								han
+							</h3>
+					</div>
+					<div class="contact_user">
+							<div class="user_avator">
+								<img src="img/webwxgetheadimg.jpg"/>
+							</div>
+							<h3 class="user_name">
+								班群
+							</h3>
+					</div>
+				</div>
+			</div>
+			<!--以上是左面板-->
+			<div id="right_panel">
+				<div id="record">
+					<div id="chat_name">han</div>
+						<div id="chat_record">
+							<!--这是是聊天记录-->
+							<div id="send">
+								<img src="img/webwxgeticon.jpg">
+								<p>this is from user</p>
+							</div>
+							<div id="receive">
+								<img src="img/webwxgeticon (1).jpg">
+								<p>this is from contact_user</p>
+							</div>
+							<div id="receive">
+								<img src="img/webwxgeticon (1).jpg">
+								<p>this is a long long long long long long longlong long long longlong long long longlong long long longlong long long longlong long long longlong long long long long long text</p>
+							</div>
+						</div>
+						<div id="chat_input">
+							<!--这里是输入面板-->
+							<div id="input_bar">
+								<span id="open_emoji" title="表情">
+									表情
+								</span>
+							</div>
+								<div id="input_content">
+									<textarea id="input" wrap = 'soft'  ></textarea><br />
+									<!--
+	                                	这里不能有任何空格不然文字框里会有默认空格
+	                                -->
+								</div>
+								<div id="input_confirm">
+								<!-- <a id="hide" class="btn">hide</a> -->
+								<span id="limitation">
+									您只能输入不超过140个字符
+								</span>
+								<span>
+									按 Enter键发送文本
+								</span>
+								<a  class="btn" href="javascript:">发送</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--
+        	main end
+        -->
+        <script type="text/javascript" src="js/for_jquery.js"></script>
+	</body>
+</html>

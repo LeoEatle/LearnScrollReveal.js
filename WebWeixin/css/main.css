@@ -1,0 +1,293 @@
+			 /*如果明确设置盒子的宽度为 100％，那么 padding 就会向外延展*/
+			  *
+			  {
+			  	margin: 0px;
+			  	padding: 0px;
+			  	border: 0px;
+			  	color: #fff;
+			    font-size: 18px;
+			  }
+			  html,body
+			  {
+			  	height: 100%;
+			  	width: 100%;
+			  	background: #000000;
+			  	font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+			  }
+			  #content
+			  {
+			  	position: relative;
+			  	margin: 0px auto;
+			  	padding: 0px;
+			  	width: 80%;
+			  	height: 100%;
+			  }
+			  #left_panel
+			  {
+		  	    position: relative;
+			    width: 30%;
+			    height: 100%;
+			    float: left;
+			    background: #2e3238;
+			  }
+			  #right_panel
+			  {
+			  	height: 100%;
+			  	width: 70%;
+			  	position: relative;
+			  	overflow: hidden;
+			  	float: left;
+			  	background: #EEEEEE;
+			  }
+			  #user
+			  {
+			  	display: block;
+			  	height: 40px;
+			  	padding: 18px;
+			  	vertical-align: middle;
+			  }
+			  .user_avator
+			  {
+			  	width: 50px;
+			  	height: 40px;
+			  	float: left;
+			  }
+			  .user_avator>img
+			  {
+			  	width: 40px;
+			  	height: 40px;
+			  	padding-right: 10px;
+			  }
+			  .user_name
+			  {
+			  	float: left;
+		  	    display: inline-block;
+			    font-weight: 400;
+			    width: 156px;
+			    height: 40px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    word-wrap: normal;
+			    color: #fff;
+			    font-size: 18px;
+			    vertical-align: top;
+			    line-height: 40px;
+			    text-decoration: none;
+			  }
+			  #search_bar
+			  {
+			  	margin-left: auto;
+			  	margin-right: auto;
+			  	margin-bottom: 6px;
+			  	width: 244px;
+			  	height: 32px;
+			  	vertical-align: middle;	
+			  }
+			  #search_bar>form>input
+			  {
+		  	  	width: 214px;
+			    height: 32px;
+			    line-height: 32px;
+			    border: 0;
+			    border-radius: 2px;
+			    -moz-border-radius: 2px;
+			    -webkit-border-radius: 2px;
+			    background-color: #26292E;
+			    color: #fff;
+			    padding-left: 30px;
+			    font-size: 12px;
+			  }
+			  #select
+			  {
+			  	margin: 0px auto;
+			  	width: 250px;
+			  	height: 25px;
+			  	padding-bottom: 4px;
+			  	padding-top: 4px;
+			  }
+			  #select>span
+			  {
+			  	width: 50%;
+			  	text-align:center;
+			  	display: block;
+			  	float: left;
+			  	font-size: 14px;
+			  	border-bottom: 2px solid #292C33;
+			  	padding-bottom: 10px;
+			  }
+			  #contact
+			  {
+			  	margin-top: 10px;
+			  	height: auto;
+			  }
+			  .contact_user
+			  {
+			  	overflow: hidden;
+			    padding: 12px 18px 11px;
+			    border-bottom: 1px solid #292C33;
+			    cursor: pointer;
+			    position: relative;
+			  }
+			  #record
+			  {
+			  	height: 100%;
+			  	padding: 10px;
+			  	width: auto;
+			  }
+			  #chat_name
+			  {
+			  	position: relative;
+				background-color: #2e3238;
+				border-radius: 2px;
+			  	font-size: 30px;
+			  	font-weight: 800;
+			  	height: 40px;
+			  	line-height: 40px;
+			  	margin: 4px, 10px;
+			  	text-overflow: ellipsis;
+			    color: #fff;
+			    text-align: center;
+			    vertical-align: middle;
+			    white-space: nowrap;
+			    word-wrap: normal;
+			  }
+			  #chat_record
+			  {
+			  	width: auto;
+			  	height: 360px;
+			  	padding: 10px;
+			  	border: 2px solid #c3c3c3;
+			    border-radius: 2px;
+			    -moz-border-radius: 2px;
+			    -webkit-border-radius: 2px;
+				overflow: auto;
+				color: #000;
+				background: #EEEEEE;
+				margin-top: 10px;
+			  }
+			  #chat_input
+			  {
+			  	width: 100%;
+			  }
+			  #input_bar
+			  {
+			  	margin-top: 10px;
+			  	background-color: #c3c3c3;
+
+			  }
+			  #input_content>textarea
+			  {
+			  	width: 100%;
+			  	height: 80px;
+			  	color: black;
+
+			  }
+			  #input_confirm
+			  {
+			  	float: right;
+			  }
+			  #input_confirm>span
+			  {
+			  	color: #888;
+				font-size: 12px;
+				margin-right: 7px;
+				
+			  }
+			  #input_confirm>a
+			  {
+			  	float: right;
+			  }
+			  .btn
+			  {
+			  	display: inline-block;
+			  	width: 30px;
+			  	height: 15px;
+			  	background-color: white;
+			  	border: 1px solid #c1c1c1;
+			  	border-radius: 4px;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				padding: 3px 30px;
+				font-size: 14px;
+				color: black;
+				text-decoration: none;
+				vertical-align: middle;
+				float: right;
+			  }
+
+			  /*现在开始设定消息记录里的css*/
+
+
+			  #send>img
+			  {
+			  	width: 40px;
+			  	height: 40px;
+			  	float: right;
+				margin-left: 5px;
+			  }
+			  #receive>img
+			  {
+			  	width: 40px;
+			  	height: 40px;
+			  	float: left;
+			  }
+			  #send>p
+			  {
+			  	padding: 5px;
+			  	color: black;
+				margin-left: 5px;
+			  	max-width: 400px;
+			  	background-color: #b2e281;
+			  	float: right;
+			  	font-size: 14px;
+			  	min-height: 1em;
+			    border-radius: 3px;
+			    vertical-align: middle;
+			  	-webkit-border-radius: 3px;
+			  	line-height: 1.6em;
+			  }
+			  #receive>p
+			  {
+			  	padding: 5px;
+			  	color: black;
+			  	vertical-align: middle;
+			  	margin-left: 5px;
+			  	background-color: #fff;
+			  	float: left;
+			  	max-width: 400px;
+			  	font-size: 14px;
+			  	min-height: 1em;
+			  	border-radius: 3px;
+			  	-webkit-border-radius: 3px;
+			  	line-height: 1.6em;
+			  }
+			  #send
+			  {
+			  	display: block;
+			  	float: right;
+				width: 100%;
+				height: auto;
+				margin: 10px 2px;
+			  }
+			  #receive
+			  {
+			  	float: left;
+			  	width: 100%;  /*让宽度充满不让下一个信息上浮*/
+			  	height: auto;
+			  	margin: 10px 2px;
+			  }
+			 #hide
+			 {
+			 	float: left;
+
+			 }
+			#limitation
+			{
+				display: none;
+				color: red !important;
+			}
+
+
+
+			  

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>for scrollReveal.js</title>
+	<style type="text/css">
+		[data-sr] {
+			visibility: hidden;
+		}
+		html,body{
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+		}
+		#content{
+			width: 95%;
+			margin: 0 auto;
+			perspective: 1000px;
+		}
+		.test
+		{
+			position: relative;
+			display: block;
+			width: 80%;
+			height: 100px;
+			margin: 10px auto;
+			padding: 20px;
+			text-align: center;
+			text-shadow: 2px yellowgreen;
+			line-height: 1.5em;
+			vertical-align: middle;
+			background-color: black;
+			font-size: 1em;
+			font-weight: bold;
+			color: yellow;
+
+		}
+		.p
+		{
+			padding: 50%,0;
+		}
+		#btn
+		{
+			width:200px;
+			height: 30px;
+			font-size: 1.2em;
+			font-weight: bold;
+			border: yellow 2px;
+		}
+
+
+	</style>
+	<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+
+</head>
+<div id="content">
+
+	<div  id="a" class="test"><p>这是默认样式</p></div>
+	<div data-sr="enter right, move 20px" id="b" class="test"><p>enter right move 20px</p></div>
+	<div data-sr="enter left, move 20px" id="a" class="test"><p>enter left move 20px<br/>enter控制方向 move控制移动的像素长度</p></div>
+	<div data-sr="enter left, over 2s" class="test"><p>enter left over 2s over控制持续时间</p></div>
+	<div data-sr="flip 180deg" class="test"><p>flip 180deg flip控制x轴上的旋转</p></div>
+	<div data-sr="spin -90deg" class="test"><p>spin -90deg spin控制y轴上的旋转</p></div>
+	<div data-sr="roll 45deg" class="test"><p>roll 45deg roll控制z轴上的旋转</p></div>
+	<div data-sr="scale down 20%" class="test"><p>scale down 20% scale控制size的大小变化<br/>up: 扩大 down: 缩小 （如果不指定默认up）</p></div>
+	<div data-sr="enter left, wait 2s" class="test"><p>enter left wait 2s wait控制动画延迟时间</p></div>
+	<div data-sr="enter left, no reset" class="test"><p>enter left no reset<br/> reset控制是否每次元素进入view时都展示动画，默认为no reset<br/>我在config里修改了<code>reset: true</code>因此这个页面默认循环展示的></p></div>
+	<div data-sr="enter left, vFactor 0.8" class="test"><p>enter left vFactor 0.8 <br/>vFactor控制的是，当这个元素进入viewport什么程度才显示动画，比如这里就是80%，所以数字越大代表动画显示得越慢</p></div>
+	<div data-sr="enter left, opacity 0.5" class="test"><p>enter left opacity 0.5 opacity顾名思义，控制动画开始时的透明度</p></div>
+	<div data-sr="ease-in 50px, ease down 20%" class="test"><p>ease-in 50px ease down 20% ease相当于一个别名，可以用ease-in代替enter和move,用ease down控制scale，也许是为了贯彻作者的语法糖概念(斜眼) </p></div>
+	<div class="test" data-sr="ease-in 50px"><p>我们还可以用jquery的attr方法动态改变data-sr的值，只需要再调用一次scrollReveal就可以重新改变样式</p><button id="btn">点击可以改变样式</button></div>
+	
+</div>
+
+
+<script  src= "js/scrollReveal.js"></script>
+<script type="text/javascript">
+    var config = {reset : true};
+	window.sr = new scrollReveal(config);
+	
+	function changedatasr()
+	{
+		$(".test").attr("data-sr", "ease-in 100px");
+		window.sr = new scrollReveal(config);
+	}
+	
+	$("#btn").bind("mousedown", changedatasr);
+	//$(".test").attr("data-sr", "spin 45deg")//这里貌似不能控制角度的变化啊
+</script>
+
+
+
+	
+</body>
+</html>
